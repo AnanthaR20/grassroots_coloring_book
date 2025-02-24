@@ -3,7 +3,7 @@ grassroots_coloring_book = django project head folder
     |- myapp: an app in the website
         |- migrations: directory django uses for handling data models (classes) we create
         |- templates: HTML files with conditional rendering capabilities for templating
-        |   |- *.html: various templates made in tutorial
+            |- *.html: various templates made in tutorial
         |- __init__.py: mark directory as module
         |- admin.py: file django uses for registering data models. Must register data models here
         |- apps.py: not sure yet
