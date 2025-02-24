@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block content%}
+<h1>Todo List</h1>
+<ul>
+    {% for todo in todos %}
+    <li>
+        {{ todo.title }}: {% if todo.completed %} Completed {% else %}Not Completed {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+<!-- 
+'{{ todo.title }}'  <--- double braces represents some value to render instead of HTML
+This value will come from an argument in a  views.py function call (could be a dictionary, etc.)
+-->
