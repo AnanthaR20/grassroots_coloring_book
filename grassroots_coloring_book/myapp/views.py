@@ -14,5 +14,12 @@ def hello_page(request):
 def todos(request):
     """Get a list of all instances of the TodoItem"""
     items = TodoItem.objects.all()
+    print(items)
     return render(request,"todos.html",{"todos":items})
 
+def display_prompt(request):
+    a = input("type the first header\n")
+    b = input("type the second header\n")
+    c = [i for i in range(10)]
+    print({"key":a})
+    return render(request,"home2.html",{"h1":a,"h2":b,"h3":c})
